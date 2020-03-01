@@ -54,7 +54,7 @@
 <meta property="og:description" content="新冠疫情期间，宅在家里，琢磨着学点新东西，做点有意思的事。先是囫囵吞枣翻看了几本HTML5，CSS3和微信小程序开发的书，并尝试着按照书中的范例操弄，不亦乐乎。后来，新购的华为Matebook14到手后，忙着复工的准备，没有那么大段空闲的时间了，再折腾这些就显得有些不务正业了。几年前，也是在假期中曾在Github上搭建过博客，假期结束上班后，那个半吊子的博客就被搁置，不伦不类，不死不活。现在借着玩">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-29T14:57:46.000Z">
-<meta property="article:modified_time" content="2020-02-29T15:54:22.110Z">
+<meta property="article:modified_time" content="2020-03-01T08:55:37.916Z">
 <meta property="article:author" content="Joe Wang">
 <meta property="article:tag" content="HEXO">
 <meta property="article:tag" content="Github">
@@ -209,10 +209,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-02-29 22:57:46 / 修改时间：23:54:22" itemprop="dateCreated datePublished" datetime="2020-02-29T22:57:46+08:00">2020-02-29</time>
+              <time title="创建时间：2020-02-29 22:57:46" itemprop="dateCreated datePublished" datetime="2020-02-29T22:57:46+08:00">2020-02-29</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-01 16:55:37" itemprop="dateModified" datetime="2020-03-01T16:55:37+08:00">2020-03-01</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -237,7 +243,45 @@
 
       
         <p><em>新冠疫情期间，宅在家里，琢磨着学点新东西，做点有意思的事。先是囫囵吞枣翻看了几本HTML5，CSS3和微信小程序开发的书，并尝试着按照书中的范例操弄，不亦乐乎。后来，新购的华为Matebook14到手后，忙着复工的准备，没有那么大段空闲的时间了，再折腾这些就显得有些不务正业了。几年前，也是在假期中曾在Github上搭建过博客，假期结束上班后，那个半吊子的博客就被搁置，不伦不类，不死不活。现在借着玩弄新电脑的兴奋劲，花了两个晚上，捯饬一下，算是给这个博客续了一口气，顺便也算是重温前段时间看过的那些书。这里记录一下，希望以后再想折腾这博客的时候，不至于忘记的一干二净，无从下手。</em></p>
-<h3 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h3><h3 id="Github设置"><a href="#Github设置" class="headerlink" title="Github设置"></a>Github设置</h3><h3 id="Node-js安装"><a href="#Node-js安装" class="headerlink" title="Node.js安装"></a>Node.js安装</h3><h3 id="HEXO安装"><a href="#HEXO安装" class="headerlink" title="HEXO安装"></a>HEXO安装</h3><h3 id="HEXO配置及NexT主题安装及配置"><a href="#HEXO配置及NexT主题安装及配置" class="headerlink" title="HEXO配置及NexT主题安装及配置"></a>HEXO配置及NexT主题安装及配置</h3><h3 id="博客文章撰写及发布"><a href="#博客文章撰写及发布" class="headerlink" title="博客文章撰写及发布"></a>博客文章撰写及发布</h3><h3 id="可有可无的优化及装饰"><a href="#可有可无的优化及装饰" class="headerlink" title="可有可无的优化及装饰"></a>可有可无的优化及装饰</h3>
+<h3 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h3><p><a href="https://git-scm.com/" target="_blank" rel="noopener">Git 官网</a> 下载适合自己系统的版本。一般情况下，根据提示进行安装，可以按照默认一路NEXT即可。</p>
+<ul>
+<li>选择Git默认编辑器。要选择自己比较熟悉，方便上手的编辑器，因为我电脑里装有Visual Studio Code，平常都用它，所以我选择 “User Visual Studio Code as Git’s default editor”。</li>
+<li>配置PATH环境。选择 “Use Git from the Windows Command Prompt” 这个选项只向PATH添加最小的Git包，可以在Git Bash和Windows命令提示符中使用Git。</li>
+<li>配置Git Bash的终端模拟器。在目前Win10平台中，完全可以选用 “Use Windowns’ default console window” 也就是使用 CMD，尽管有许多限制，没有特殊需求的情况下，在win10系统中用着还好。</li>
+</ul>
+<p>验证安装：Win+R，输入cmd，回车，输入 <code>git --version</code> , 查看git版本。若电脑返回的类似 <code>git version 2.25.0.windowns.1</code> ， OK了。</p>
+<p>用HEXO框架在Github上建博客，似乎不需要更多的Git知识了。简单的理解，Git就是HEXO用来上传网页文件到Github的后台小工具。</p>
+<h3 id="Github设置"><a href="#Github设置" class="headerlink" title="Github设置"></a>Github设置</h3><p><a href="https://github.com/" target="_blank" rel="noopener">GitHub 官网</a> 注册账号（这里假定注册账号为 yourname)，并建立一个新的 repository, 命名为 yourname.github.io 。要注意这个 repository 名称的第一部分一定要和Github注册的用户名完全一致。如果你注册的账户名为 zhangsan 那么这个 repository 的名称一定要是 zhangsan.github.io 。</p>
+<p>这样你的GitHub博客已经建成了，不过这个博客什么都没有，是空白的。下面就是要用HEXO往里面添内容了。</p>
+<p>为了保证HEXO能顺利使用Git这个工具往GitHub上传内容，还要设置一下，让你的电脑和GitHub账号建立联系和信任。</p>
+<ol>
+<li><p>检查电脑里是否已经存在 SSH Key。SSH是啥，就是一种比较安全的网络协议，用于计算机之间的加密登录。SSH Key就是这两个计算机间建立信任的指纹密码。SSH key 分为私钥和公钥，就是两台计算机进行加密、解密、验证用的东西。私钥就是你自己的，在自己手里的钥匙，公钥就是上传给你信任的计算机上，交给别人的钥匙，只有这两个钥匙同时作用，两台计算机才能建立起信任，才好进行沟通。<br>ssh key 在win10系统一般存放在 <code>Windows(C:)&gt;用户&gt;YourName&gt;.ssh</code> 这个目录下，私钥的文件名为 <code>id_rsa</code>,公钥的文件名为 <code>id_rsa.pub</code>。如果你在自己电脑上找不到 .ssh 文件夹和这两个文件，则表明你的电脑还没有生成 SSH key。<br>另一种办法是在Git Bash中查询。如果上一步Git安装正常的话，那么在win10资源管理器界面或者桌面（一回事）单击鼠标右键，选择 Git Bash Here，在弹出的终端窗口输入 <code>$ ls -al ~/.ssh</code>。如果SSH key存在的话，会显示出文件列表。</p>
+</li>
+<li><p>生成SSH Key。打开Git Bash，输入以下命令：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code><br>用 -t 对密钥类型指定。如果没有指定则默认生成用于SSH-2的RSA密钥。这里使用的是rsa。同时在密钥中有一个注释字段，用-C来指定所指定的注释，可以方便用户标识这个密钥，指出密钥的用途或其他有用的信息。所以在这里输入自己的邮箱或者其他都行,当然，如果不想要这些可以直接输入：<code>ssh-keygen</code> 。输入完毕后按回车，程序会要求输入一个密码，输入完密码后按回车会要求再确认一次密码，如果不想要密码可以在要求输入密码的时候按两次回次，表示密码为空，并且确认密码为空，此时<code>Windows(C:)&gt;用户&gt;YourName&gt;.ssh</code> 目录下已经生成好了。</p>
+</li>
+<li><p>将SSH key添加到GitHub。登录GitHub，打开 <code>setting-&gt;SSH keys</code>, 点击右上角 <code>New SSH key</code>, 把<code>Windows(C:)&gt;用户&gt;YourName&gt;.ssh</code> 目录下生成好的公钥 id_rsa.pub 文件以文本打开复制其中全部内容到 key 输入框中，顺便为这个key起个好记的名字，以示区分。</p>
+</li>
+</ol>
+<p>这样GitHub就与你的电脑建立信任，可以一起愉快的玩耍了。</p>
+<h3 id="Node-js安装"><a href="#Node-js安装" class="headerlink" title="Node.js安装"></a>Node.js安装</h3><p>Node.js 是以Google Chrome V8 引擎为基础的 JavaScript 运行环境，也是HEXO运行的依赖环境。在<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js 官网</a> 下载对应的版本，依照提示，一路选择默认，Next到底即可。安装完成后，可以在Windows命令行(CMD)窗口查验，输入 <code>node -v</code> 及 <code>npm -v</code> 查验安装的node.js, npm 的版本。</p>
+<h3 id="HEXO安装"><a href="#HEXO安装" class="headerlink" title="HEXO安装"></a>HEXO安装</h3><h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><p>打开Git Bash终端窗口，输入以下命令： <code>npm install hexo-cli -g</code></p>
+<h4 id="2-本地部署"><a href="#2-本地部署" class="headerlink" title="2. 本地部署"></a>2. 本地部署</h4><p>在电脑上为此博客建立一个专门的文件夹，比如在D盘根目录下Github-Hexo文件夹<code>D:\Github-Hexo</code>。 使用资源管理器打开此文件夹，在窗口内单击鼠标右键选择 <code>Git Bash Here</code> 打开Git Bash终端窗口。在此窗口输入，依次输入<code>hexo init</code>，<code>hexo generate</code>, <code>hexo server</code> 。 至此本地部署已经完成，启动了hexo server服务，可以在浏览器输入<code>http://localhost:4000</code> 查看HEXO默认搭建的页面效果。</p>
+<h4 id="3-Github部署。"><a href="#3-Github部署。" class="headerlink" title="3. Github部署。"></a>3. Github部署。</h4><p>使用VSCode或其它文本编辑器，打开上一步建立的文件夹根目录下的<code>_config.yml</code>文件，安装下面的注释说明，修改<code>Deploy</code>字段。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs:http://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span>  <span class="comment">#类型填写git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:yourname/yourname.github.io.git</span>  <span class="comment"># 注意这里出现的yourname是在github中你注册的账号名。</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span> <span class="comment">#默认分支master</span></span><br></pre></td></tr></table></figure>
+
+<p>修改后保存文件。依旧在此文件夹下，打开Git Bash终端窗口，输入<code>npm install hexo-deploy-git-save</code> 安装插件。 插件安装成功后，在此终端窗口分别输入<code>hexo clean</code>, <code>hexo g -d</code>生成并提交至Github发表。顺利的话用浏览器 <code>http://yourname.github.io</code>可以浏览访问博客了，呈现的内容和页面效果和本地部署时浏览器查看时候一样。</p>
+<h3 id="博客文章撰写及发布"><a href="#博客文章撰写及发布" class="headerlink" title="博客文章撰写及发布"></a>博客文章撰写及发布</h3><p>在博客所在文件下打开git Bash终端窗口，输入: <code>hexo new postname</code>, HEXO会在../source/_posts/目录下生成 <code>postname.md</code> 文件，用markdown编辑器修改并保存此文件（博客文章），然后在git Bash终端输入 <code>hexo g -d</code>,写好的博客文件就被发布到github供浏览访问了（可能会有延时，多刷新几次浏览器窗口，或者清除cookies重新开启浏览器就应该可以看到新撰写的博客文章了。）<br>一般来说，博客文章的发布流程如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new postname <span class="comment"># postname是此博客文件名</span></span><br><span class="line"><span class="comment"># 开启MarkDown编辑器撰写博客文章，并保存。</span></span><br><span class="line">hexo clean <span class="comment">#清除缓存</span></span><br><span class="line">hexo g -d <span class="comment">#生成页面并部署上传</span></span><br></pre></td></tr></table></figure>
+<h3 id="HEXO配置、主题安装及使用"><a href="#HEXO配置、主题安装及使用" class="headerlink" title="HEXO配置、主题安装及使用"></a>HEXO配置、主题安装及使用</h3><h4 id="HEXO配置"><a href="#HEXO配置" class="headerlink" title="HEXO配置"></a>HEXO配置</h4><p>在博客根目录下，修改<code>_config.yml</code>文件可以完成大部分的配置。除了上面已经提过的GitHub部署相关内容为，一般根据需要可修改的如下配置（其它的诸如网址、根目录、永久链接、文件夹定义等配置，可以在真正需要的时候查阅hexo文档随时修改）：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">比尔盖子的博客</span> <span class="comment">#网站标题 比如 比尔盖子的博客</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">让每个马桶都有马桶盖</span> <span class="comment">#网站副标题 比如 让每个马桶都有马桶盖</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">比尔盖子的博客，是一个专注马桶盖的专业博客</span> <span class="comment">#网站描述 比如 这是比尔盖子的博客，是一个专注马桶盖的专业博客。</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">马桶，马桶盖</span> <span class="comment">#关键词 比如 马桶，马桶盖，</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Bill</span> <span class="string">Gazi</span> <span class="comment">#作者，也就是你 比尔盖子</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span> <span class="comment">#语言，简体中文 zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span> <span class="comment">#时区 中国上海</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="主题的安装和使用"><a href="#主题的安装和使用" class="headerlink" title="主题的安装和使用"></a>主题的安装和使用</h4><p>主题的安装主要有两步，第一步是从网上下载HEXO的主题，然后复制到你HEXO博客网站所在文件夹的themes目录中。如下载的NexT主题，把下载的文件夹命名为next，复制到位，这样就有<code>D:\Github-Hexo\themes\next</code>目录了。打开这个目录，你会发现还在有docs，layout等子目录，以及LICENSE.md, crowdin.yml, README.md, .travis.yml等文件。不管它。第二步修改上面已经改过两次的HEXO配置文件<code>_config.yml</code>, 主题相关的配置如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span> <span class="comment">#这个next就是第一步中复制到themes中文件夹名称</span></span><br></pre></td></tr></table></figure>
+<p>现在”hexo g -d”一下， 博客就会以新的面目展现了。So Easy！</p>
+<h4 id="主题的配置"><a href="#主题的配置" class="headerlink" title="主题的配置"></a>主题的配置</h4><p>每个主题都有不同的特色功能和表现效果，要想充分使用这些功能，最好的办法就是研读你官方文档。对于NexT主题，主要是修改主题配置文件<code>_config.yml</code>(是的，和HEXO的配置文件名是一样的，不过所在文件夹不同，HEXO配置文件在网站文件夹的根目录下，NexT主题的配置文件在<code>D:\Github-Hexo\themes\next\source</code> 文件夹下）</p>
+<p>两个配置文件的修改，可以完成许多博客个性化的东西，比如微信、微博等社交图标链接，网站图标，作者头像，字体设置等等。喜欢折腾的的还可以去做各种妖艳的背景和鼠标点击效果，去添加各种访问统计信息显示等。</p>
+<p><strong>表现是为内容服务的，如果网站没啥干货，添加许多纯粹的炫酷效果和功能，除了浪费资源，增加网站负担和不稳定性外，也就是自嗨的作用了。</strong></p>
+
     </div>
 
     
@@ -337,7 +381,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git安装"><span class="nav-number">1.</span> <span class="nav-text">Git安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github设置"><span class="nav-number">2.</span> <span class="nav-text">Github设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js安装"><span class="nav-number">3.</span> <span class="nav-text">Node.js安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HEXO安装"><span class="nav-number">4.</span> <span class="nav-text">HEXO安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HEXO配置及NexT主题安装及配置"><span class="nav-number">5.</span> <span class="nav-text">HEXO配置及NexT主题安装及配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客文章撰写及发布"><span class="nav-number">6.</span> <span class="nav-text">博客文章撰写及发布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可有可无的优化及装饰"><span class="nav-number">7.</span> <span class="nav-text">可有可无的优化及装饰</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git安装"><span class="nav-number">1.</span> <span class="nav-text">Git安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github设置"><span class="nav-number">2.</span> <span class="nav-text">Github设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js安装"><span class="nav-number">3.</span> <span class="nav-text">Node.js安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HEXO安装"><span class="nav-number">4.</span> <span class="nav-text">HEXO安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装"><span class="nav-number">4.1.</span> <span class="nav-text">1. 安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-本地部署"><span class="nav-number">4.2.</span> <span class="nav-text">2. 本地部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Github部署。"><span class="nav-number">4.3.</span> <span class="nav-text">3. Github部署。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客文章撰写及发布"><span class="nav-number">5.</span> <span class="nav-text">博客文章撰写及发布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HEXO配置、主题安装及使用"><span class="nav-number">6.</span> <span class="nav-text">HEXO配置、主题安装及使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HEXO配置"><span class="nav-number">6.1.</span> <span class="nav-text">HEXO配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主题的安装和使用"><span class="nav-number">6.2.</span> <span class="nav-text">主题的安装和使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主题的配置"><span class="nav-number">6.3.</span> <span class="nav-text">主题的配置</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
